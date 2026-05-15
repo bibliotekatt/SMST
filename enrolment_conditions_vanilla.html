@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolment Conditions Process - Go8 Uni</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+        .container {
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        header {
+            border-bottom: 2px solid #222;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        h1 {
+            color: #1a1a1a;
+            margin: 5px 0;
+            font-size: 22pt;
+        }
+        .draft-tag {
+            color: #b30000;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 10pt;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 35px;
+            font-size: 16pt;
+        }
+        
+        /* Enrolment Conditions Visual Grid */
+        .conditions-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .condition-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background: #fdfdfd;
+            text-align: center;
+        }
+        .condition-header {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 11pt;
+            color: #000;
+        }
+
+        /* Stream Visualization */
+        .stream-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background: #f9f9f9;
+            border-left: 10px solid #ddd;
+        }
+        .stream-label {
+            padding: 15px;
+            font-weight: bold;
+            min-width: 250px;
+            border-right: 1px solid #eee;
+        }
+        .stream-desc {
+            padding: 15px;
+            font-size: 10pt;
+        }
+        .s1 { border-left-color: #555; }
+        .s2 { border-left-color: #0066cc; }
+        .s3 { border-left-color: #cc0000; }
+        .s4 { border-left-color: #e6b800; }
+        .s5 { border-left-color: #6600cc; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 10pt;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 8pt;
+            color: #999;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="draft-tag">Internal Draft for Consultation</div>
+            <h1>Go8 Uni: Enrolment Condition Process</h1>
+            <p><strong>Student Academic Progress Framework</strong></p>
+        </header>
+
+        <section>
+            <h2>Objective</h2>
+            <p>This process ensures procedural fairness by allowing students to respond to proposed conditions before they are formally applied. Enrolment conditions are strictly supportive mechanisms designed to help students return to satisfactory academic standing.</p>
+        </section>
+
+        <section>
+            <h2>The 5 Enrolment Conditions</h2>
+            <div class="conditions-container">
+                <div class="condition-box">
+                    <span class="condition-header">1. Underload</span>
+                    Enrol in a maximum of X credit points.
+                </div>
+                <div class="condition-box">
+                    <span class="condition-header">2. Required Unit</span>
+                    Enrol in and pass a specific designated unit.
+                </div>
+                <div class="condition-box">
+                    <span class="condition-header">3. Restricted Unit</span>
+                    Must not enrol in a specific restricted unit.
+                </div>
+                <div class="condition-box">
+                    <span class="condition-header">4. Credit Minimum</span>
+                    Enrol in and pass at least X credit points.
+                </div>
+                <div class="condition-box">
+                    <span class="condition-header">5. Course Specific</span>
+                    Enrol in specific level or coded units (e.g. Level 3000).
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conversion to 5 Streams</h2>
+            <p>The proposed framework categorizes academic risk into five distinct streams:</p>
+            
+            <div class="stream-row s1">
+                <div class="stream-label">Stream 1: Early Support</div>
+                <div class="stream-desc">In-semester outreach for failed assessments or high-risk indicators.</div>
+            </div>
+            <div class="stream-row s2">
+                <div class="stream-label">Stream 2: Support to Pass</div>
+                <div class="stream-desc">Students failing units but not yet meeting unsatisfactory progress criteria.</div>
+            </div>
+            <div class="stream-row s3">
+                <div class="stream-label">Stream 3: Unsatisfactory Progress</div>
+                <div class="stream-desc">Significant failure rates or breach of previous enrolment conditions.</div>
+            </div>
+            <div class="stream-row s4">
+                <div class="stream-label">Stream 4: Slow Progression</div>
+                <div class="stream-desc">Students exceeding 75% of course duration without proportional completion.</div>
+            </div>
+            <div class="stream-row s5">
+                <div class="stream-label">Stream 5: Disengaged Students</div>
+                <div class="stream-desc">Students receiving exclusively 'Withdrawn' (ON) grades.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Administrative Implementation</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Condition</th>
+                        <th>SMST System Automation</th>
+                        <th>Review Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Underload</td>
+                        <td>Prevents enrolment exceeding credit limit.</td>
+                        <td>Triggers Stream 2/3 if limit exceeded and a unit is failed.</td>
+                    </tr>
+                    <tr>
+                        <td>Required Unit</td>
+                        <td>Blocks general enrolment until unit is added.</td>
+                        <td>Triggers Stream 2/3 if unit is failed or not enrolled.</td>
+                    </tr>
+                    <tr>
+                        <td>Credit Minimum</td>
+                        <td>Reminds student of condition during enrolment.</td>
+                        <td>Not met if student passes fewer than required credits.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="footer">
+            <p>Go8 Uni | Academic Progress Reform | Page 1 of 1</p>
+        </div>
+    </div>
+</body>
+</html>
